@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2020-06-26 04:09:42 +0900
-updated : 2020-07-22 08:31:00 +0900
+updated : 2020-08-11 08:28:53 +0900
 tag     : 
 toc     : true
 public  : true
@@ -32,7 +32,6 @@ latex   : false
 
 # 프로그래밍
 ----------
-  * [[python-snips]]
   * [[라즈베리파이에-vim설치]]
   * vim-script
 
