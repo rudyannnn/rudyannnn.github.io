@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2020-06-26 04:09:42 +0900
-updated : 2021-09-28 13:43:07 +0900
+updated : 2021-09-28 13:51:47 +0900
 tag     : 
 toc     : true
 public  : true
@@ -38,6 +38,3 @@ latex   : false
 * [[pic-download]]
 * [[ahk]]
 
-
-# 스마트스피커
-* [[Amazon-alexa]]
