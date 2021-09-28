@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2021-09-16 00:01:57 +0900
-updated : 2021-09-16 00:14:44 +0900
+updated : 2021-09-24 08:25:41 +0900
 tag     : 
 toc     : true
 public  : true
@@ -132,3 +132,4 @@ if A_Hour = %user_hour%
 '''
 # [[앙키한자추가]]
 
+# 테스트글 삽입
