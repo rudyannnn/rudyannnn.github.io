@@ -86,6 +86,14 @@
     url: /wiki/2022-02
     updated: '2022-02-23 22:58:06 +0900'
     children: []
+2022-04:
+    type: wiki
+    title: ""
+    summary: ""
+    parent: ""
+    url: /wiki/2022-04
+    updated: '2022-04-07 07:58:48 +0900'
+    children: []
 autohotkey:
     type: wiki
     title: ""
@@ -140,7 +148,7 @@ index:
     summary: ""
     parent: ""
     url: /wiki/index
-    updated: '2022-04-07 01:20:23 +0900'
+    updated: '2022-04-07 07:57:58 +0900'
     children: []
 Martion:
     type: wiki
