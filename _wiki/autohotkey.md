@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2022-02-23 22:42:25 +0900
-updated : 2022-02-23 23:15:05 +0900
+updated : 2022-06-05 00:07:04 +0900
 tag     : 
 toc     : true
 public  : true
@@ -37,3 +37,4 @@ latex   : false
 * [[EQ-EEPROM-256-Read-NTP]]
 * [[base]]
 * [[vimrc]]
+* [[image-book-tts]]
