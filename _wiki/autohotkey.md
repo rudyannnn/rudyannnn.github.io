@@ -3,7 +3,7 @@ layout  : wiki
 title   : 
 summary : 
 date    : 2022-02-23 22:42:25 +0900
-updated : 2022-08-10 10:32:47 +0900
+updated : 2022-08-10 11:32:41 +0900
 tag     : 
 toc     : true
 public  : true
@@ -38,4 +38,4 @@ latex   : false
 * [[base]]
 * [[vimrc]]
 * [[image-book-tts]]
-* test_20220810
+* [[test_20220810_1]]
