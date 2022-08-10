@@ -38,4 +38,8 @@ latex   : false
 * [[base]]
 * [[vimrc]]
 * [[image-book-tts]]
+<<<<<<< HEAD
 * [[test_20220810_1]]
+=======
+* test_20220810_1
+>>>>>>> 2d915a592aef465657c8cc772d60f672f1eae124
