@@ -1,0 +1,70 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/rudyannn/SDB1/git/rudyannnn.github.io/_wiki/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/38c046d8/
+-------------------------	2020-08-03.md	/^### -------------------------$/;"	S
+55F 투명GFF,OGS 비용/일정/품질 문의	2020-08-03.md	/^### 55F 투명GFF,OGS 비용\/일정\/품질 문의$/;"	S
+AutoHotKey	autohotkey.md	/^## AutoHotKey$/;"	s
+FOG Cable을 제작하라	2020-08-03.md	/^### FOG Cable을 제작하라$/;"	S
+Links	mathjax-latex.md	/^## Links$/;"	s
+OCR 또는 직접 손으로 타이핑	오프라인을-온라인으로.md	/^## OCR 또는 직접 손으로 타이핑$/;"	s	chapter:종이책을 디지털 기기에 보관하는  2가지 방법이 있다.
+[GitHub 접속 용 SSH 키 만드는 방법](https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/)	리눅스-사용법-메모.md	/^## [GitHub 접속 용 SSH 키 만드는 방법](https:\/\/www.lainyzine.com\/ko\/article\/creati/;"	s
+[[31인치 TOUCH]] 상품을 기획하라	2020-08-03.md	/^### [[31인치 TOUCH]] 상품을 기획하라$/;"	S
+[[IDP 면담]]	2020-08-03.md	/^### [[IDP 면담]] ###$/;"	S
+[[Martion]]	2020-06.md	/^## [[Martion]]$/;"	s
+[[Practical_Vim]]	2020-06.md	/^## [[Practical_Vim]]$/;"	s
+[[Practical_Vim]]	2020-07.md	/^## [[Practical_Vim]]$/;"	s
+[[Pro_Git_2E]]	2020-07.md	/^## [[Pro_Git_2E]]$/;"	s
+[[Pro_Git_2E]]	2020-08.md	/^## [[Pro_Git_2E]]$/;"	s
+[[verilog를_이용한_디지털_시스템_설계_]]	2020-07.md	/^## [[verilog를_이용한_디지털_시스템_설계_]]$/;"	s
+[[verilog를_이용한_디지털_시스템_설계_]]	2020-08.md	/^## [[verilog를_이용한_디지털_시스템_설계_]]$/;"	s
+[[vimrc-백업-2021-09-01]]	리눅스-사용법-메모.md	/^## [[vimrc-백업-2021-09-01]]$/;"	s
+[[나는 무조건 합격하는 공부만 한다.]]	2020-08.md	/^## [[나는 무조건 합격하는 공부만 한다.]]$/;"	s
+latex   : false	2020-06.md	/^latex   : false$/;"	s
+osmc에 vim과 python2, python3을 설치하는데 많은 시간을 썼다.	2020-06-24.md	/^# osmc에 vim과 python2, python3을 설치하는데 많은 시간을 썼다.$/;"	c
+scp 복사	리눅스-사용법-메모.md	/^## scp 복사$/;"	s
+ssh 연결	리눅스-사용법-메모.md	/^## ssh 연결 $/;"	s
+vimrc 임시저장 2022. 02. 23	vimrc.md	/^## vimrc 임시저장 2022. 02. 23$/;"	s
+개요	mathjax-latex.md	/^## 개요$/;"	s
+기계인간님의 포스트 중 "루비셰프" 독서기록	2020-08-12.md	/^# 기계인간님의 포스트 중 "루비셰프" 독서기록$/;"	c
+기계인간님의 포스트 중 "함께 자라기" 독서기록	2020-08-12.md	/^# 기계인간님의 포스트 중 "함께 자라기" 독서기록$/;"	c
+기타 생활 기록	2020-08-12.md	/^# 기타 생활 기록$/;"	c
+노트북으로 볼때	독서에-대하여.md	/^## 노트북으로 볼때$/;"	s
+도구	mathjax-latex.md	/^## 도구$/;"	s
+독서방법에 대하여	독서에-대하여.md	/^## 독서방법에 대하여$/;"	s
+독서의-기술	index.md	/^# 독서의-기술$/;"	c
+또 checkinstall 명령어가 있는데 이것이 별도 프로그램 설치가 필요한지 몰라서다.	2020-06-24.md	/^# 또 checkinstall 명령어가 있는데 이것이 별도 프로그램 설치가 필요한지 몰/;"	c
+또 한번 시도하는데 오랜 시간이 소요되어서다.	2020-06-24.md	/^# 또 한번 시도하는데 오랜 시간이 소요되어서다.$/;"	c
+목차	Practical_Vim.md	/^# 목차$/;"	c
+목차	Pro_Git_2E.md	/^# 목차$/;"	c
+목차	verilog를_이용한_디지털_시스템_설계_.md	/^# 목차$/;"	c
+목차 5093	나는 무조건 합격하는 공부만 한다..md	/^# 목차 5093$/;"	c
+설치 방법	mathjax-latex.md	/^## 설치 방법$/;"	s
+수식 사용 예제	mathjax-latex.md	/^## 수식 사용 예제$/;"	s
+스크립트 작성	autohotkey.md	/^### 스크립트 작성$/;"	S	section:AutoHotKey
+업무	index.md	/^# 업무$/;"	c
+여기서부터 시작이다.	할-일-목록.md	/^# 여기서부터 시작이다.$/;"	c
+오늘 일기를 작성하면	2020-06-25.md	/^# 오늘 일기를 작성하면 $/;"	c
+오래 걸린 이유는 구글링해서 찾은 명령어 중에 path에 대해서 수정을 안해서다.	2020-06-24.md	/^# 오래 걸린 이유는 구글링해서 찾은 명령어 중에 path에 대해서 수정을 안/;"	c
+완충제 5mm 간섭을 테스트하라	2020-08-03.md	/^### 완충제 5mm 간섭을 테스트하라 $/;"	S
+외국어	index.md	/^# 외국어$/;"	c
+우리 바로가 어제 밤에 또 울었다.	2020-08-14.md	/^# 우리 바로가 어제 밤에 또 울었다.$/;"	c
+자다가 갑자기 깨서 우는 바로	2020-08-12.md	/^# 자다가 갑자기 깨서 우는 바로$/;"	c
+종이책을 디지털 기기에 보관하는  2가지 방법이 있다.	오프라인을-온라인으로.md	/^# 종이책을 디지털 기기에 보관하는  2가지 방법이 있다.##$/;"	c
+주로 사용하는 매크로를 wiki에 저장한다.	autohotkey.md	/^## 주로 사용하는 매크로를 wiki에 저장한다.$/;"	s
+책을 망가뜨리지 않고 책을 스캔하는 방법	오프라인을-온라인으로.md	/^### 책을 망가뜨리지 않고 책을 스캔하는 방법$/;"	S	section:종이책을 디지털 기기에 보관하는  2가지 방법이 있다.""카메라로 사진을 찍어 이미지 상태로 보관
+처형네서 육개장을 먹었다.	2020-08-14.md	/^# 처형네서 육개장을 먹었다.$/;"	c
+카메라로 사진을 찍어 이미지 상태로 보관	오프라인을-온라인으로.md	/^## 카메라로 사진을 찍어 이미지 상태로 보관$/;"	s	chapter:종이책을 디지털 기기에 보관하는  2가지 방법이 있다.
+페북으로 볼때	독서에-대하여.md	/^## 페북으로 볼때$/;"	s
+프로그래밍	index.md	/^# 프로그래밍$/;"	c
+프로그램 설치	autohotkey.md	/^### 프로그램 설치$/;"	S	section:AutoHotKey
+한국 주택 금융 공사 주택 보증 보증료 납부 문의해야	2020-08-03.md	/^### 한국 주택 금융 공사 주택 보증 보증료 납부 문의해야$/;"	S
+핸드폰으로 볼때	독서에-대하여.md	/^## 핸드폰으로 볼때$/;"	s
+회사에서 마크다운 문서를 써보자.	2020-06-26.md	/^# 회사에서 마크다운 문서를 써보자.$/;"	c
