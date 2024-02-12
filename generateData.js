@@ -89,7 +89,7 @@ dataList.forEach(function(page) {
 savePageList(pageMap);
 
 function saveTagMap(tagMap) {
-    fs.writeFile("./data/tagMap.yml", YAML.stringify(tagMap), function(err) {
+    fs.writeFile("./_data/tagMap.yml", YAML.stringify(tagMap), function(err) {
         if (err) {
             return console.log(err);
         }
@@ -98,7 +98,7 @@ function saveTagMap(tagMap) {
 }
 
 function saveTagList(tagList) {
-    fs.writeFile("./data/tagList.yml", YAML.stringify(tagList), function(err) {
+    fs.writeFile("./_data/tagList.yml", YAML.stringify(tagList), function(err) {
         if (err) {
             return console.log(err);
         }
@@ -107,7 +107,7 @@ function saveTagList(tagList) {
 }
 
 function savePageList(pageMap) {
-    fs.writeFile("./data/pageMap.yml", YAML.stringify(pageMap), function(err) {
+    fs.writeFile("./_data/pageMap.yml", YAML.stringify(pageMap), function(err) {
         if (err) {
             return console.log(err);
         }
