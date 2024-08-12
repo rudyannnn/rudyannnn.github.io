@@ -25,10 +25,10 @@ latex   : false
 |	return
 |^+4::
 |    send, click, %Mouse_X%, %Mouse_Y%{enter}
-|	send, while(color{!}=%color%){{}{enter}
+|	send, while(color{!}=%color%){ {}{enter}
 |    send,     PixelGetColor, color, %Mouse_X%, %Mouse_Y%{enter}
 |	send, sleep 1000{enter}
-|	send, {}}{esc}{k 3}
+|	send, {} }{esc}{k 3}
 |	return
 |	
 |^+5::pixel_get_color()
@@ -68,7 +68,7 @@ latex   : false
 |			if index_strLen = 0
 |				break
 |			StringMid, outputChar, clipboard, Length_str-index_strLen+1, 1
-|			send,{%outputChar%}
+|			send,{ %outputChar%}
 |			index_strLen-=1
 |		}
 |		sleep, 200
