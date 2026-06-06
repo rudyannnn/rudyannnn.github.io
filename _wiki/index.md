@@ -40,7 +40,7 @@ latex   : false
 * [[pic-download]]
 * [[autohotkey]]
 * [[맥미니에서-블로그-쓰기]]
-* [[CI-CD-gem-도커이미지]]
+* [[ci-cd-gem-docker]]{CI, CD, gem, 도커 이미지 개념 정리}
 
 # gem-test
 # gem-test_20240812_1355
