@@ -40,6 +40,7 @@ latex   : false
 * [[pic-download]]
 * [[autohotkey]]
 * [[맥미니에서-블로그-쓰기]]
+* [[CI-CD-gem-도커이미지]]
 
 # gem-test
 # gem-test_20240812_1355
