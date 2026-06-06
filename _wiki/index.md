@@ -39,6 +39,7 @@ latex   : false
 * [[리눅스-사용법-메모]]
 * [[pic-download]]
 * [[autohotkey]]
+* [[맥미니에서-블로그-쓰기]]
 
 # gem-test
 # gem-test_20240812_1355
