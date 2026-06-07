@@ -3,7 +3,7 @@ layout  : wiki
 title   : tmux 창 정렬하는 법
 summary : pane 분할·크기 조정·레이아웃 프리셋 정리
 date    : 2026-06-07 11:16:58 +0900
-updated : 2026-06-07 11:16:58 +0900
+updated : 2026-06-07 11:43:00 +0900
 tag     : tmux terminal linux tool
 toc     : true
 public  : true
@@ -144,6 +144,75 @@ tmux move-pane -t :2
 | `C-b ,` | window 이름 변경 |
 | `C-b &` | 현재 window 닫기 |
 | `C-b w` | window 목록 보기 |
+
+---
+
+## VS Code + Cline IDE 스타일 레이아웃
+
+VS Code에서 Cline(AI 코딩 어시스턴트)을 열면 아래 구조가 된다:
+
+```
++---------------------+-----------+
+|                     |           |
+|   에디터 (vim 등)    |   Cline   |
+|                     |   패널    |
+|                     |           |
++---------------------+-----------+
+|   터미널 (전체 너비)              |
++----------------------------------+
+```
+
+tmux에서 이 배치를 만드는 순서:
+
+```bash
+# 1. 먼저 하단에 터미널 영역을 전체 너비로 분리
+tmux split-window -v -p 25
+
+# 2. 상단 pane으로 이동
+tmux select-pane -U
+
+# 3. 상단을 좌우로 나눠 오른쪽에 AI 패널 생성
+tmux split-window -h -p 35
+
+# 4. 에디터 pane(왼쪽)으로 이동
+tmux select-pane -L
+```
+
+결과 구조:
+
+| pane | 위치 | 비율 | 용도 |
+|------|------|------|------|
+| 0 | 상단 좌 | 너비 65% · 높이 75% | 에디터 (vim / nvim) |
+| 1 | 상단 우 | 너비 35% · 높이 75% | AI 출력 / 로그 |
+| 2 | 하단 전체 | 너비 100% · 높이 25% | 명령 실행 터미널 |
+
+비율은 `resize-pane` 으로 취향껏 조정한다.
+
+### 셸 함수로 등록해두기
+
+`~/.zshrc` 또는 `~/.bashrc`에 추가하면 `ide` 한 단어로 레이아웃을 세팅한다:
+
+```bash
+ide() {
+  tmux split-window -v -p 25
+  tmux select-pane -U
+  tmux split-window -h -p 35
+  tmux select-pane -L
+}
+```
+
+### tmux.conf에서 단축키로 등록하기
+
+```bash
+# ~/.tmux.conf
+bind-key i run-shell " \
+  tmux split-window -v -p 25; \
+  tmux select-pane -U; \
+  tmux split-window -h -p 35; \
+  tmux select-pane -L"
+```
+
+`C-b i` 로 어느 window에서든 즉시 IDE 레이아웃으로 바꿀 수 있다.
 
 ---
 
