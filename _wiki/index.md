@@ -44,6 +44,7 @@ latex   : false
 * [[gitlab-pages-and-email-send]]{사내 GitLab 위키 만들기 + Gmail 첨부 발송}
 * [[tmux-layout]]{tmux 창 정렬하는 법}
 * [[how-to-read-man-page]]{man 페이지 읽는 법}
+* [[iptime-epson-cups]]{ipTIME 공유기 + Epson 프린터 Mac 설정}
 
 # gem-test
 # gem-test_20240812_1355
