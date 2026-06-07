@@ -3,7 +3,7 @@ layout  : wiki
 title   : tmux 창 정렬하는 법
 summary : pane 분할·크기 조정·레이아웃 프리셋 정리
 date    : 2026-06-07 11:16:58 +0900
-updated : 2026-06-07 11:43:00 +0900
+updated : 2026-06-07 12:10:00 +0900
 tag     : tmux terminal linux tool
 toc     : true
 public  : true
@@ -149,42 +149,50 @@ tmux move-pane -t :2
 
 ## VS Code + Cline IDE 스타일 레이아웃
 
-VS Code에서 Cline(AI 코딩 어시스턴트)을 열면 아래 구조가 된다:
+VS Code에서 Cline(AI 코딩 어시스턴트)을 사용할 때의 3열 구조를 tmux로 재현한다:
 
 ```
-+---------------------+-----------+
-|                     |           |
-|   에디터 (vim 등)    |   Cline   |
-|                     |   패널    |
-|                     |           |
-+---------------------+-----------+
-|   터미널 (전체 너비)              |
-+----------------------------------+
++----------+------------------+----------+
+|          |   에디터 / 데이터 |          |
+|  파일    |   (vim 등)       |  Cline / |
+|  탐색기  +------------------+  Claude  |
+|          |   터미널         |  패널    |
++----------+------------------+----------+
+   ~20%          ~45%            ~35%
 ```
 
-tmux에서 이 배치를 만드는 순서:
+- **왼쪽 열**: 파일 탐색기 (`ranger`, `lf`, `tree` 등)
+- **가운데 열**: 위는 에디터/데이터, 아래는 명령 실행 터미널
+- **오른쪽 열**: Cline 또는 Claude 패널 (AI 출력·대화)
+
+### 배치 만드는 순서
 
 ```bash
-# 1. 먼저 하단에 터미널 영역을 전체 너비로 분리
-tmux split-window -v -p 25
+# 1. 현재 pane이 왼쪽 열(파일 탐색기)이 됨
+#    오른쪽 80%를 새 pane으로 분리
+tmux split-window -h -p 80
 
-# 2. 상단 pane으로 이동
-tmux select-pane -U
+# 2. 오른쪽 80% 중에서 다시 Cline 패널(전체의 ~35%) 분리
+tmux split-window -h -p 44
 
-# 3. 상단을 좌우로 나눠 오른쪽에 AI 패널 생성
-tmux split-window -h -p 35
-
-# 4. 에디터 pane(왼쪽)으로 이동
+# 3. 가운데 pane으로 이동
 tmux select-pane -L
+
+# 4. 가운데를 위아래로 나눠 하단에 터미널 생성
+tmux split-window -v -p 30
+
+# 5. 파일 탐색기(맨 왼쪽)로 포커스 이동
+tmux select-pane -t 0
 ```
 
 결과 구조:
 
 | pane | 위치 | 비율 | 용도 |
 |------|------|------|------|
-| 0 | 상단 좌 | 너비 65% · 높이 75% | 에디터 (vim / nvim) |
-| 1 | 상단 우 | 너비 35% · 높이 75% | AI 출력 / 로그 |
-| 2 | 하단 전체 | 너비 100% · 높이 25% | 명령 실행 터미널 |
+| 0 | 왼쪽 | 너비 20% · 전체 높이 | 파일 탐색기 |
+| 1 | 가운데 위 | 너비 45% · 높이 70% | 에디터 / 데이터 |
+| 2 | 가운데 아래 | 너비 45% · 높이 30% | 터미널 |
+| 3 | 오른쪽 | 너비 35% · 전체 높이 | Cline / Claude 패널 |
 
 비율은 `resize-pane` 으로 취향껏 조정한다.
 
@@ -194,10 +202,11 @@ tmux select-pane -L
 
 ```bash
 ide() {
-  tmux split-window -v -p 25
-  tmux select-pane -U
-  tmux split-window -h -p 35
+  tmux split-window -h -p 80
+  tmux split-window -h -p 44
   tmux select-pane -L
+  tmux split-window -v -p 30
+  tmux select-pane -t 0
 }
 ```
 
@@ -206,10 +215,11 @@ ide() {
 ```bash
 # ~/.tmux.conf
 bind-key i run-shell " \
-  tmux split-window -v -p 25; \
-  tmux select-pane -U; \
-  tmux split-window -h -p 35; \
-  tmux select-pane -L"
+  tmux split-window -h -p 80; \
+  tmux split-window -h -p 44; \
+  tmux select-pane -L; \
+  tmux split-window -v -p 30; \
+  tmux select-pane -t 0"
 ```
 
 `C-b i` 로 어느 window에서든 즉시 IDE 레이아웃으로 바꿀 수 있다.
