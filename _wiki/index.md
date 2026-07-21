@@ -46,7 +46,7 @@ latex   : false
 * [[tmux-layout]]{tmux 창 정렬하는 법}
 * [[how-to-read-man-page]]{man 페이지 읽는 법}
 * [[iptime-epson-cups]]{ipTIME 공유기 + Epson 프린터 Mac 설정}
-* [[windows-pyside6-qtcore-dll-load-failed]]{Windows PySide6 QtCore DLL load failed 트러블슈팅}
+* [[windows-python-select-version]]{Windows에서 여러 Python 버전 중 실행할 것 선택하기}
 
 # gem-test
 # gem-test_20240812_1355
