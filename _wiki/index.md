@@ -48,6 +48,7 @@ latex   : false
 * [[iptime-epson-cups]]{ipTIME 공유기 + Epson 프린터 Mac 설정}
 * [[windows-python-select-version]]{Windows에서 여러 Python 버전 중 실행할 것 선택하기}
 * [[git-merge-x-theirs-recovery]]{잘못된 브랜치에서 쌓인 커밋을 git merge -X theirs로 복구하기}
+* [[excution-method-local-AI]]{로컬 AI 실행 방법 (LM Studio로 Qwen3 · DeepSeek R1 돌리기)}
 
 # gem-test
 # gem-test_20240812_1355
